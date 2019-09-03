@@ -5,7 +5,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(to top, #1c1d27, #3b3e58);
+    background: linear-gradient(to top, #777d4f, #14473C, #143228);
     text-align: center;
     font-family: 'Roboto', sans-serif;
     /*
@@ -28,7 +28,6 @@ body {
 
   .intermission {
       grid-area: intermission;
-      background-color: #9cc2da;
       height: 500px;
       padding-top: 250px;
       padding-bottom: 250px;
@@ -37,8 +36,56 @@ body {
   }
 
 
+  #parallax-container {
+    display: block;
+    height: 550px; // This height can be adjusted here and below
+ }
+ 
+ #parallax-container div {
+     
+    top: 0;
+    transform: translateY(0px);
+    height: 550px; // Keep this the same height as above
+    width: 100%;
+ }
+ 
+ #content {
+    position: relative;
+ }
 
+  .layer-1 {
+   
+    background: url(../images/layer-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 500px !important;
+  }
+  
 
+  .layer-2 {
+   
+    background: url(../images/layer-2.png);
+    background-repeat: no-repeat;
+  }
+
+  .layer-3 {
+   
+    background: url(../images/layer-3.png);
+    background-repeat: no-repeat;
+    height: 50%;
+  }
+
+  .info-section {
+
+    height: 500px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: #f1f1f1;
+    background: linear-gradient(to top, #060F0F, #021011);
+    text-align: center;
+
+}
+ 
 
 
   /*=======================
@@ -58,3 +105,4 @@ body {
 .hideme {
     opacity: 0;
 }
+

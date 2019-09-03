@@ -34,12 +34,14 @@
   }
   
   .skybox {
-    background-image: linear-gradient(to bottom, #e6f0f6, #9cc2da);
+    background-image: linear-gradient(to bottom, red, ##777d4f);
     width: 100%;
     height: 100%;
     z-index: 5;
   }
   
+  /*
+
   .sun {
     width: 6rem;
     height: 6rem;
@@ -61,7 +63,7 @@
     -webkit-filter: blur(4rem);
             filter: blur(4rem);
   }
-  
+  */
   .cloud {
     -webkit-animation: animateclouds 200s infinite linear;
             animation: animateclouds 200s infinite linear;
