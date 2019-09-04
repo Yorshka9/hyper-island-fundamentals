@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +19,7 @@
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    width: 100vw;
+    width: 99vw;
     min-height: 100vh;
   }
   
@@ -31,31 +32,6 @@
     position: relative;
   }
 
-
-  /*
-
-  .sun {
-    width: 6rem;
-    height: 6rem;
-    background: #fefefe;
-    border-radius: 50%;
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
-    position: absolute;
-    top: 2rem;
-    right: 2.5rem;
-  }
-  .sun::before {
-    background: #fefefe;
-    border-radius: 50%;
-    width: 200%;
-    height: 200%;
-    left: -50%;
-    top: -50%;
-    -webkit-filter: blur(4rem);
-            filter: blur(4rem);
-  }
-  */
   .cloud {
     -webkit-animation: animateclouds 200s infinite linear;
             animation: animateclouds 200s infinite linear;
@@ -104,14 +80,14 @@
   .cloud__3 {
     -webkit-animation-delay: -102s;
             animation-delay: -102s;
-    top: 450px;
+    top: 750px;
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
   .cloud__4 {
-    -webkit-animation-delay: -89s;
-            animation-delay: -89s;
-    top: 510px;
+    -webkit-animation-delay: -73s;
+            animation-delay: -73s;
+    top: 360px;
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
   }
@@ -126,8 +102,8 @@
     -webkit-animation-delay: -143s;
             animation-delay: -143s;
     top: 252px;
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(2.75);
+            transform: scale(2.75);
   }
   .cloud__7 {
     -webkit-animation-delay: -180s;
@@ -140,8 +116,8 @@
     -webkit-animation-delay: -65s;
             animation-delay: -65s;
     top: 569px;
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(2.15);
+            transform: scale(2.15);
   }
   .cloud__9 {
     -webkit-animation-delay: -41s;
@@ -216,7 +192,7 @@
 
 
 
-      .stars {
+.stars {
        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
 
       }
