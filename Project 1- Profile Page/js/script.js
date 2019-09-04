@@ -31,6 +31,39 @@ $('.hidden').addClass('unhide');
     });
 
 
+    // adds the "highlight" class to "faded" elements to simulate a delayed highlight transition
+
+$('.faded').addClass('highlight');
+
+
+
+// function for setting the color of elements with the class "faded" when they are scrolled into view
+
+$(document).ready(function() {
+  
+    // every time the window is scrolled ...
+    $(window).scroll( function(){
+    
+        // check the location of each desired element 
+        $('.faded').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            // if the object is completely visible in the window, highlight it
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
     window.addEventListener('scroll', () => {
         let parent = document.getElementById('parallax-container');
         let children = parent.getElementsByTagName('div');

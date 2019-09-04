@@ -29,7 +29,7 @@ body {
   .intermission {
       grid-area: intermission;
       height: 500px;
-      padding-top: 250px;
+      padding-top: 150px;
       padding-bottom: 250px;
       color: #f1f1f1;
 
@@ -38,14 +38,14 @@ body {
 
   #parallax-container {
     display: block;
-    height: 550px; // This height can be adjusted here and below
+    height: 650px; 
  }
  
  #parallax-container div {
      
     top: 0;
     transform: translateY(0px);
-    height: 550px; // Keep this the same height as above
+    height: 480px; 
     width: 100%;
  }
  
@@ -53,39 +53,73 @@ body {
     position: relative;
  }
 
-  .layer-1 {
+ .layer-1 {
    
-    background: url(../images/layer-1.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: 500px !important;
-  }
-  
+  background: url(../images/moon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-left: 650px;
+
+}
 
   .layer-2 {
    
-    background: url(../images/layer-2.png);
+    background: url(../images/scream-2.png);
     background-repeat: no-repeat;
+    background-position: left center;
+    margin-left: 420px;
+
   }
+  
 
   .layer-3 {
    
-    background: url(../images/layer-3.png);
+    background: url(../images/layer-2.png);
     background-repeat: no-repeat;
-    height: 50%;
+    height: 100%;
   }
 
-  .info-section {
+  .layer-4 {
+   
+    background: url(../images/layer-3.png);
+    background-repeat: no-repeat;
+    
+  }
 
-    height: 500px;
-    padding-top: 250px;
-    padding-bottom: 250px;
+  .contact-section {
+
+    height: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     color: #f1f1f1;
     background: linear-gradient(to top, #060F0F, #021011);
     text-align: center;
 
 }
+
+  .skybox {
+    padding-top: 200px;
+  }
+
+  .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+  margin: 0 auto;
+  }
+
+  .intro {
+    color: white;
+    padding-top: 20px;
+  }
  
+
+  .faded {
+    opacity: 0.5;
+  }
 
 
   /*=======================
@@ -106,3 +140,62 @@ body {
     opacity: 0;
 }
 
+  /*=======================
+    Flexbox      
+=======================*/
+
+.flex {
+  display: -ms-flexbox;
+  display: flex; 
+  max-width: 1200px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+  /*=======================
+    Cards      
+=======================*/
+
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+
+  /*=======================
+    Social media      
+=======================*/
+
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+  padding-top: 20px;
+}
+
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/github.svg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact {
+  padding-bottom: 30px;
+}
