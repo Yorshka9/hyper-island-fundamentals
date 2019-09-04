@@ -70,19 +70,21 @@ body {
     margin-left: 420px;
 
   }
-  
+
 
   .layer-3 {
    
     background: url(../images/layer-2.png);
     background-repeat: no-repeat;
     height: 100%;
+    width: 100%;
   }
 
   .layer-4 {
    
     background: url(../images/layer-3.png);
     background-repeat: no-repeat;
+    width: 100%;
     
   }
 
@@ -114,6 +116,7 @@ body {
   .intro {
     color: white;
     padding-top: 20px;
+    padding-bottom: 20%;
   }
  
 
@@ -165,6 +168,7 @@ body {
   text-align: left;
   border-radius: 6px;
   transition: all .5s;
+  color: white;
 }
 
 
@@ -198,4 +202,21 @@ a {
 
 .contact {
   padding-bottom: 30px;
+}
+
+  /*=======================
+    Arrow     
+=======================*/
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 9px;
+  
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
