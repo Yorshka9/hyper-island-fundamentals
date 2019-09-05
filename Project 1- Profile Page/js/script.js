@@ -53,7 +53,7 @@ $(document).ready(function() {
             // if the object is completely visible in the window, highlight it
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1'},500);
+                $(this).animate({'opacity':'1'},1000);
                     
             }
             
@@ -73,6 +73,8 @@ $(document).ready(function() {
      }, false)
      
 
+
+// anchor tag smooth scrolling script
 
 // Select all links with hashes
 $('a[href*="#"]')

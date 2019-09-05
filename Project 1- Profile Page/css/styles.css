@@ -8,17 +8,6 @@ body {
     background: linear-gradient(to top, #777d4f, #14473C, #143228);
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    /*
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 100px 100px;
-    grid-template-areas:
-      "cloud cloud cloud"
-      "cloud cloud cloud"
-      "cloud cloud cloud"
-      "intermission intermission intermission";
-    */
 
   }
 
@@ -31,23 +20,30 @@ body {
       color: #f1f1f1;
 
   }
-
-
-  #parallax-container {
-    display: block;
-    height: 650px; 
- }
- 
- #parallax-container div {
-     
-    top: 0;
-    transform: translateY(0px);
-    height: 480px; 
- }
+  
+  .skybox {
+    padding-top: 100px;
+  }
  
  #content {
     position: relative;
  }
+
+   /*=======================
+    parallax     
+=======================*/
+
+ #parallax-container {
+  display: block;
+  height: 650px; 
+}
+
+#parallax-container div {
+   
+  top: 0;
+  transform: translateY(0px);
+  height: 480px; 
+} 
 
  .layer-1 {
    
@@ -84,6 +80,10 @@ body {
     
   }
 
+    /*=======================
+    parallax end     
+=======================*/
+
   .contact-section {
 
     height: 100px;
@@ -95,9 +95,6 @@ body {
 
 }
 
-  .skybox {
-    padding-top: 0px;
-  }
 
   .profile-image {
   margin-top: 50px;
@@ -111,18 +108,14 @@ body {
 
   .intro {
     color: white;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10%;
   }
  
 
-  .faded {
-    opacity: 0.5;
-  }
-
 
   /*=======================
-    opacity effect on h2      
+    opacity and fade effect      
 =======================*/
 
 .hidden {
@@ -137,6 +130,11 @@ body {
 
 .hideme {
     opacity: 0;
+}
+
+
+.faded {
+  opacity: 0.5;
 }
 
   /*=======================
@@ -222,7 +220,14 @@ i {
   
 }
 
+
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+.down-arrow p {
+  display: inline-block;
+}
+
