@@ -22,9 +22,6 @@ body {
 
   }
 
-  .scene-container {
-      grid-area: cloud;
-  }
 
   .intermission {
       grid-area: intermission;
@@ -99,7 +96,7 @@ body {
 }
 
   .skybox {
-    padding-top: 150px;
+    padding-top: 0px;
   }
 
   .profile-image {
@@ -114,8 +111,8 @@ body {
 
   .intro {
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20%;
+    padding-top: 10px;
+    padding-bottom: 10%;
   }
  
 

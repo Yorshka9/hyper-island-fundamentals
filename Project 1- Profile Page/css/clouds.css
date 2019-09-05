@@ -113,11 +113,11 @@
             transform: scale(0.85);
   }
   .cloud__8 {
-    -webkit-animation-delay: -65s;
-            animation-delay: -65s;
-    top: 569px;
-    -webkit-transform: scale(2.15);
-            transform: scale(2.15);
+    -webkit-animation-delay: -55s;
+            animation-delay: -55s;
+    top: 539px;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   .cloud__9 {
     -webkit-animation-delay: -41s;
