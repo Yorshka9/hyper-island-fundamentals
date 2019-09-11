@@ -3,16 +3,16 @@
 .grid-container {
     display: grid;
     grid-template-columns: 0.5fr 4fr 0.5fr;
-    grid-template-rows: 64px 600px auto auto auto 300px 250px 350px;
+    grid-template-rows: 64px 600px auto auto auto auto 400px 200px;
     grid-template-areas: 
     "nav nav nav"
     "header header header"
     "... section-2 ..."
     "... section-1 ..."
-    "section-3 section-3 section-3"
-    "pause pause pause"
-    "section-4 section-4 section-4"
-    "footer footer footer";
+    "... section-3 ..."
+    "... pause ..."
+    "... section-4 ..."
+    "... footer ...";
 
 }
 
@@ -27,7 +27,7 @@ header {
 
 }
 
-.pause {
+.section-pause {
     grid-area: pause;
 
 }
@@ -49,18 +49,6 @@ header {
     grid-area: section-4;
 
 }
-
-.section-5 {
-    grid-area: section-5;
-    background-color: #B5897D;
-}
-
-.section-6 {
-    grid-area: section-6;
-    background-color: #CF9C8F;
-
-}
-
 
 footer {
     grid-area: footer;

@@ -7,8 +7,10 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #fff;
+}
 
-
+p {
+    line-height: 1.5;
 }
 
 /*=======================
@@ -23,7 +25,7 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
     color: white;
-    background-color: #6CD4C9;
+    background-color: #333333;
     
 }
 
@@ -44,17 +46,30 @@ nav ul a {
 
 }
 
+
+
 .nav-link {
     padding-right: 30px;
     padding-left: 30px;
+    margin-right: 10px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.nav-link:hover {
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .button {
     border: 2px solid;
     margin-right: 20px;
-    padding: 7px 12px 7px 12px;
+    padding: 7px 12px 7px 12px;   
+}
 
-    
+.button:hover {
+    background-color: #3292A8;
+    transition: 0.5s;
 }
 
 .logo {
@@ -69,17 +84,17 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
-
-
 }
 
 .div-container-1 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
     align-items: center;
     text-align: center;
     padding-top: 35px;
+    padding-bottom: 30px;
 }
 
 .div-container-1 img {
@@ -98,7 +113,7 @@ header {
 }
 
 .trial-button:hover {
-    background-color: #6054A3;
+    background-color: #3292A8;
     color: white;
     transition: 0.5s;
     border-color: black;
@@ -109,24 +124,44 @@ header {
         Pause  
 =======================*/
 
-.pause {
+.section-pause {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #3292A8;
+}
+
+.pause {
+
+    display: flex;
+    flex-direction: column; 
+    max-width: 500px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    width: 50%;
+    align-self: flex-start;
+}
+
+.refund-text {
+
+    display: flex;
     flex-direction: column;
+    padding: 10px 40px 40px;
+    max-width: 500px;
+    text-align: left;
+    border-radius: 6px;
+    line-height: 1.5;
+    align-self: flex-start;
     color: white;
-    background-color: #333333;
 }
 
-.pause p {
-    font-style: italic;
+.money-back {
+    max-width: 60%;
+    padding-top: 10px;
 }
 
-.thumbs-up {
-    height: 40%;
-    border-radius: 80%;
-    border: 3px solid white;
-}
 
 
 /*=======================
@@ -136,10 +171,11 @@ header {
 .section-1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
     background-color: #333333;
     color: #f1f1f1;
+    
 
 }
 
@@ -147,31 +183,19 @@ header {
 
     display: flex;
     flex-direction: column;
-    padding: 10px 40px 40px;
+    align-items: stretch;
+    padding-left: 40px;
+    padding-right: 40px;
     max-width: 500px;
     text-align: left;
-    border-radius: 6px;
     line-height: 1.5;
 }
 
-
-.about-2 {
-
-    display: flex;
-    flex-direction: column;
-    padding: 10px 40px 40px;
-    max-width: 500px;
-    text-align: left;
-    border-radius: 6px;
-    line-height: 1.5;
-}
-
-.about-1, .about-2 a {
-    text-decoration: none;
-}
 
 .read-more {
     text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 
 }
 
@@ -184,6 +208,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #3292A8;
+    color: #fff;
 }
 
 .why-python {
@@ -199,6 +224,7 @@ header {
 
 .python {
     max-width: 100%;
+    padding-top: 25px;
 }
 
 
@@ -234,7 +260,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px 40px 40px;
+    padding: 10px 40px 20px;
     text-align: left;
     border-radius: 6px;
     line-height: 1.5;
@@ -257,6 +283,27 @@ header {
     text-align: center;
 }
 
+.learn-more {
+
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+}
+
+.learn-more:hover {
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.learn-more p {
+    margin: 0;
+
+}
+
+
 
 
 
@@ -277,25 +324,37 @@ header {
 
 }
 
+.section-4 div p {
+
+    padding-bottom: 20px;
+}
+
 .link {
     color: inherit;
     text-decoration: none;
+
 }
 
 .trial-button-2 {
     text-decoration: none;
     color: inherit;
     border: 2px solid;
-    padding: 7px 5px 7px 5px;
+    padding: 7px 0px 7px 0px;
+    width: 10%;
 
 }
 
 .trial-button-2:hover {
-    background-color: #6054A3;
+    background-color: #3292A8;
     color: white;
     transition: 0.5s;
-    border-color: black;
 }
+
+.get-started {
+    width: 55%;
+
+}
+
 
 
 /*=======================
@@ -305,9 +364,8 @@ header {
 footer {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: flex-end;
     justify-content: center;
-
     background-color: #333333;
 
 }
@@ -315,9 +373,7 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: #333333;
     color: #f1f1f1;
     width: 100%;
 }
@@ -326,9 +382,25 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: flex-start;
     list-style-type: none;
     width: 100%;
+    padding: 0;
+}
+
+.footer-links ul li a {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    display: block;
+}
+
+.footer-links ul li a:hover {
+
+    
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .dash {
@@ -343,9 +415,11 @@ footer {
 
 .border {
     border-bottom: 1px solid;
-    width: 85%;
+    width: 90%;
     border-color: white;
 }
-
-
-
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
