@@ -2,46 +2,45 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 64px 300px 150px 300px 300px 300px 250px 300px 200px 150px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 64px 600px auto auto 300px 300px 250px 150px;
     grid-template-areas: 
-    "nav nav"
-    "header header"
-    "pause pause"
-    "section-1 section-1"
-    "section-2 section-2"
-    "section-3 section-3"
-    "section-4 section-4"
-    "section-5 section-5"
-    "section-6 section-6"
-    "footer footer";
+    "nav nav nav"
+    "header header header"
+    "... section-2 ..."
+    "... section-1 ..."
+    "... section-3 ..."
+    "pause pause pause"
+    "section-4 section-4 section-4"
+  /*  "...... section-5 ......"
+    "...... section-6 ......" */
+    "footer footer footer";
 
 }
 
 
 nav {
     grid-area: nav;
-    background-color: rgb(37, 29, 27);
+
 }
 
 header {
     grid-area: header;
-    background-color: #382A27;
+
 }
 
 .pause {
     grid-area: pause;
-    background-color: #4A3833;
+
 }
 
 .section-1 {
     grid-area: section-1;
-    background-color: #5E4741;
+
 }
 
-.section-2 {
+.section-why {
     grid-area: section-2;
-    background-color: #755951;
 }
 
 .section-3 {
